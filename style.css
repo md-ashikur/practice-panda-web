@@ -41,4 +41,34 @@ button{
     
 }
 
- 
+
+ /* --------------animation ------------------*/
+ .pic{
+    position: relative;
+     animation: c-pic 1s ease 0s infinite alternate ;
+     animation-play-state: running;
+ }
+ @keyframes c-pic {
+     0%{
+         
+         top: -5px;
+     }
+     100%{
+         top: 5px;
+     }
+ }
+ /* ------------------- */
+ .card-img-top{
+    position: relative;
+     animation: card-img 1.5s ease 0s infinite alternate ;
+     animation-play-state: running;
+ }
+ @keyframes card-img {
+     0%{
+        
+        transform: scale(0.9) rotate(5deg);
+     }
+     100%{
+        transform: scale(1);
+     }
+ }
